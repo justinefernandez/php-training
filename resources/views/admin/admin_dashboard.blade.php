@@ -48,11 +48,12 @@
         @include('admin.body.header')
         <!-- partial -->
 
+		@yield('admin')
+
         <!-- partial:partials/_footer.html -->
         @include('admin.body.footer')
         <!-- partial -->
 
-		@yield('admin')
 	</div>
 </div>
 	<!-- core:js -->
