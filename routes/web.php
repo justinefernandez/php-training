@@ -16,7 +16,7 @@ use App\Http\Controllers\AgentController;
 */
 
 Route::get('/', function () {
-    return view('welcomex');
+    return view('welcome');
 });
 
 Route::middleware('auth')->group(function () {
