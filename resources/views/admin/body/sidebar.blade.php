@@ -18,27 +18,43 @@
               <span class="link-title">Dashboard</span>
             </a>
           </li>
-          <li class="nav-item nav-category">web apps</li>
+          <li class="nav-item nav-category">Real Estate</li>
           <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" href="#emails" role="button" aria-expanded="false" aria-controls="emails">
+            <a class="nav-link" data-bs-toggle="collapse" href="#types" role="button" aria-expanded="false" aria-controls="emails">
               <i class="link-icon" data-feather="mail"></i>
-              <span class="link-title">Email</span>
+              <span class="link-title">Property Type</span>
               <i class="link-arrow" data-feather="chevron-down"></i>
             </a>
-            <div class="collapse" id="emails">
+            <div class="collapse" id="types">
               <ul class="nav sub-menu">
                 <li class="nav-item">
-                  <a href="pages/email/inbox.html" class="nav-link">Inbox</a>
+                  <a href="{{ route('all.type') }}" class="nav-link">All Type</a>
                 </li>
                 <li class="nav-item">
-                  <a href="pages/email/read.html" class="nav-link">Read</a>
-                </li>
-                <li class="nav-item">
-                  <a href="pages/email/compose.html" class="nav-link">Compose</a>
+                  <a href="{{ route('add.type') }}" class="nav-link">Add Type</a>
                 </li>
               </ul>
             </div>
           </li>
+
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#amenitie" role="button" aria-expanded="false" aria-controls="emails">
+              <i class="link-icon" data-feather="mail"></i>
+              <span class="link-title">Amenities</span>
+              <i class="link-arrow" data-feather="chevron-down"></i>
+            </a>
+            <div class="collapse" id="amenitie">
+              <ul class="nav sub-menu">
+                <li class="nav-item">
+                  <a href="{{ route('all.amenitie') }}" class="nav-link">All Amenitie</a>
+                </li>
+                <li class="nav-item">
+                  <a href="{{ route('add.amenitie') }}" class="nav-link">Add Amenitie</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
           <li class="nav-item">
             <a href="pages/apps/calendar.html" class="nav-link">
               <i class="link-icon" data-feather="calendar"></i>
@@ -126,29 +142,27 @@
               </ul>
             </div>
           </li>
+
+          <li class="nav-item nav-category">Role & Permission</li>
           <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#advancedUI" role="button" aria-expanded="false" aria-controls="advancedUI">
               <i class="link-icon" data-feather="anchor"></i>
-              <span class="link-title">Advanced UI</span>
+              <span class="link-title">Role & Permission</span>
               <i class="link-arrow" data-feather="chevron-down"></i>
             </a>
             <div class="collapse" id="advancedUI">
               <ul class="nav sub-menu">
                 <li class="nav-item">
-                  <a href="pages/advanced-ui/cropper.html" class="nav-link">Cropper</a>
+                  <a href="{{ route('all.permission') }}" class="nav-link">All Permission</a>
                 </li>
                 <li class="nav-item">
                   <a href="pages/advanced-ui/owl-carousel.html" class="nav-link">Owl carousel</a>
                 </li>
-                <li class="nav-item">
-                  <a href="pages/advanced-ui/sortablejs.html" class="nav-link">SortableJs</a>
-                </li>
-                <li class="nav-item">
-                  <a href="pages/advanced-ui/sweet-alert.html" class="nav-link">Sweet Alert</a>
-                </li>
               </ul>
             </div>
           </li>
+
+          
           <li class="nav-item nav-category">Docs</li>
           <li class="nav-item">
             <a href="https://www.nobleui.com/html/documentation/docs.html" target="_blank" class="nav-link">
