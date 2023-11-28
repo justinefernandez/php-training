@@ -36,10 +36,14 @@
                                         <td>{{ $item->name }}</td>
                                         <td>{{ $item->email }}</td>
                                         <td>{{ $item->phone }}</td>
-                                        <td>Roles</td>
                                         <td>
-                                            <a href="" class="btn btn-inverse-warning" title="Edit"> <i data-feather="edit"></i></a>
-                                            <a href="" class="btn btn-inverse-danger" id="delete"title="Delete"> <i data-feather="trash-2"></i></a>
+                                            @foreach($item->roles as $role)
+                                            <span class="badge badge-pill bg-danger"> {{ $role->name }}</span>
+                                            @endforeach
+                                        </td>
+                                        <td>
+                                            <a href="{{ route('edit.admin',$item->id) }}" class="btn btn-inverse-warning" title="Edit"> <i data-feather="edit"></i></a>
+                                            <a href="{{ route('delete.admin',$item->id) }}" class="btn btn-inverse-danger" id="delete"title="Delete"> <i data-feather="trash-2"></i></a>
                                         </td>
                                     </tr>
                                 @endforeach
