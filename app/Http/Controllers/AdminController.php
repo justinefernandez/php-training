@@ -19,7 +19,7 @@ class AdminController extends Controller
     public function AdminLogout(Request $request)
     {
         Auth::guard('web')->logout();
-        $request->session()->invalidate(); 
+        $request->session()->invalidate();
         $request->session()->regenerateToken();
         return redirect('/');
     }
@@ -55,7 +55,7 @@ class AdminController extends Controller
         }
 
         $data->save();
-        
+
         $notification = array(
             'message' => 'Admin Profile Updated Successfully',
             'alert-type' => 'success'
